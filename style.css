@@ -50,4 +50,10 @@ footer {
 
 ul {
   list-style: none;
+  line-height: 2rem;
+}
+
+.footer-details {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
 }
