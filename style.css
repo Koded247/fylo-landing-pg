@@ -1,0 +1,53 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body {
+margin: 0 auto;
+width: 100%;
+height: 100vh;
+/* background-color: rgb(129, 129, 208); */
+}
+
+.general-container {
+  
+  
+}
+
+/* HEADER SECTION */
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3rem;
+}
+
+.right-section {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+
+}
+
+
+
+
+/* FOOTER */
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: hsl(243, 87%, 12%);
+  padding: 2rem;
+  color: white;
+
+}
+
+ul {
+  list-style: none;
+}
