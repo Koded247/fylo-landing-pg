@@ -33,17 +33,38 @@ header {
 
 }
 
+.third-section {
+  background: hsl(238, 22%, 44%);
+  padding: 3rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 8rem;
+  color: white;
+}
 
+.email-input {
+width: 80%;
+padding: 0.8rem ;
+border-radius: 5px;
+border: none;
+margin-bottom: 1rem;
+}
+.submit-btn{
+padding: 0.8rem 2rem;
+background:hsl(224, 93%, 58%) ;
+border: none;
+border-radius: 5px;
+}
 
 
 /* FOOTER */
 footer {
-  position: fixed;
+  /* position: fixed;
   bottom: 0;
   left: 0;
-  right: 0;
+  right: 0; */
   background: hsl(243, 87%, 12%);
-  padding: 2rem;
+  padding: 3rem;
   color: white;
 
 }
