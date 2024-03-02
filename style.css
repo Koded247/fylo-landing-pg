@@ -44,8 +44,8 @@ header {
 }
 
 .first-section, .second-section{
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   align-items: center;
   padding: 4rem;
   color:hsl(238, 22%, 44%);
@@ -65,15 +65,15 @@ header {
 
 .second-section {
   background: hsl(240, 75%, 98%);
-  border-top-right-radius: 30%;
-  border-top-left-radius: 30% ;
+  border-top-right-radius: 90% 30%;
+  border-top-left-radius: 80% 30% ;
   
   
 }
 
 .testimonial-box {
-max-width: 350px;
-padding: 2rem;
+max-width: 400px;
+padding:1rem  2rem;
 background-color: white;
 border-radius: 0.5rem;
 margin-top: 2rem;
@@ -142,12 +142,10 @@ footer {
   margin-bottom: 1rem;
 }
 
-.footer-lg {
+.footer-lg svg{
   fill: white;
 }
-#circle {
-  fill: red;
-}
+
 
 .adr-icon {
 margin-right: 1rem;
@@ -174,29 +172,49 @@ ul {
 
 
 @media only screen and (max-width: 600px) {
-  .third-section , .footer-details  {
+  body {
+    margin: 0 auto;
+    width: 100%;
+    height: 100vh;
+    font-family:"Open Sans", sans-serif;
+    font-weight: 500;
+    
+    }
+    .general-container {
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      display: flex;
+      justify-content: center;
+      padding: 2rem;
+      align-items: center;
+      gap: 2rem;
+      margin-left: 2rem;
+      margin-right: 2rem;
+    }
+    .right-section {
+      display: flex;
+      justify-content: center;
+    }
+
+
+  .third-section , .second-section, .footer-details {
     display: grid;
     grid-template-columns: 1fr; 
+    align-items: center;
+    max-width: 100%;
   }
 
-  header {
+
+
+
+  /* FOOTER */
+
+  .social-icons {
     display: flex;
-    justify-content: space-between;
-    /* padding: 1rem; */
-    /* align-items: center; */
-    background-color: blueviolet;
+    justify-content: center;
+    align-items: center;
   }
- 
-/* .footer-details {
-  display: grid;
-  grid-template-columns: 1fr;
-} */
-.right-section {
-  display: flex;
-  /* gap: 2rem; */
-  /* justify-content: space-between;
-  cursor: pointer; */
-}
-
-  
 }
